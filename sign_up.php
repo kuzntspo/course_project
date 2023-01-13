@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main_page.css">
+    <link rel="stylesheet" href="sign_up.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -18,12 +18,19 @@
         </ul>
     </header>
     <main>
-    <div class="square-block">
-        <form>
-            <input type="text" placeholder="Искать здесь...">
-            <button type="submit"></button>
+        <form action="" class="ui-form">
+            <h3>РЕГИСТРАЦИЯ</h3>
+            <div class="form-row">
+                <input type="text" id="name" required autocomplete="off"><label for="name">Введите имя</label>
+            </div>
+            <div class="form-row">
+                <input type="text" id="email" required autocomplete="off"><label for="email">Введите email</label>
+            </div>
+            <div class="form-row">
+                <input type="password" id="password" required autocomplete="off"><label for="password">Придумайте Пароль</label>
+            </div>
+            <p><input type="submit" value="Зарегистрироваться"></p>
         </form>
-    </div>
     </main>
     <footer></footer>
 </body>
