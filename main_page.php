@@ -11,18 +11,14 @@
 <body>
     <header>
         <ul class = "menu-main">
+            <li><a href = "index.html">На главную</a></li>
             <li><a href = "about_us.html">О нас</a></li>
             <li><a href = "#">Авторизация</a></li>
         </ul>
     </header>
     <main>
-    <div class="welcome">
-        <h1 class="welcome__title">Аттракционы Москвы</h1>
-        <div class="button-wrapper">
-         <a href="main_page.php" class="arrow-btn">Выбрать аттракцион<span></span></a>
-        </div>
+    
     </main>
     <footer></footer>
 </body>
 </html>
-
