@@ -113,7 +113,7 @@ ul {
   font-family: 'Roboto', sans-serif;
   background: none;
   border-width: 0;
-  border-bottom: 2px solid rgb(241, 196, 168);
+  border-bottom: 2px solid rgb(255, 255, 255);
   transition: all 0.2s ease;
 }
 .form-row label {
@@ -142,8 +142,8 @@ ul {
   width: 100%;
   padding: 0;
   line-height: 42px;
-  background: rgb(164, 135, 116);
-  border-width: 0;
+  background:#ffffff00;
+  border: 2px solid #ffffff;
   color: white;
   font-size: 20px;
 }

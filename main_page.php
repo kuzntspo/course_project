@@ -23,6 +23,9 @@
             <input type="text" placeholder="Искать здесь...">
             <button type="submit"></button>
         </form>
+        <script type="text/javascript" charset="utf-8" 
+        async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e91a42a728f80ace5ee57cbff50a7a4bd87067b82fb1cd6c6d61b36bca2ec84&amp;width=853&amp;height=513&amp;lang=ru_RU&amp;scroll=true">
+    </script>
     </div>
     </main>
     <footer></footer>
