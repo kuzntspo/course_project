@@ -25,11 +25,11 @@
             <input type="text" placeholder="Искать здесь...">
             <button type="submit"></button>
         </form>
-        <div class = "table_db">
+        <!--<div class = "table_db">
               <table>
               <?php require "table.php"; ?>
                </table>
-          </div>
+          </div>-->
     </div>
     </main>
     <footer></footer>
