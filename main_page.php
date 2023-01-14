@@ -15,6 +15,7 @@
         <ul class = "menu-main">
             <li><a href = "index.html">На главную</a></li>
             <li><a href = "about_us.html">О нас</a></li>
+            <li><a href = "map.php">Карта</a></li>
             <li><a href = "log_in.php">Авторизация</a></li>
         </ul>
     </header>
@@ -24,9 +25,6 @@
             <input type="text" placeholder="Искать здесь...">
             <button type="submit"></button>
         </form>
-        <script type="text/javascript" charset="utf-8" 
-        async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e91a42a728f80ace5ee57cbff50a7a4bd87067b82fb1cd6c6d61b36bca2ec84&amp;width=853&amp;height=513&amp;lang=ru_RU&amp;scroll=true">
-    </script>
     </div>
     </main>
     <footer></footer>

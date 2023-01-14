@@ -15,6 +15,7 @@
         <ul class = "menu-main">
             <li><a href = "index.html">На главную</a></li>
             <li><a href = "about_us.html">О нас</a></li>
+            <li><a href = "map.php">Карта</a></li>
             <li><a href = "log_in.php">Авторизация</a></li>
         </ul>
     </header>
