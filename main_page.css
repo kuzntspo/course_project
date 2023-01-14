@@ -128,3 +128,21 @@ button:before {
 input:focus {
   border-color: rgb(144, 126, 115);
 }
+.table_db {
+  border: 3px;
+  border-color: black;
+  float:right;
+  caption-side: top;
+  margin-bottom: 100px;
+  border-collapse: separate;
+  left: 600px;
+  margin-top: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  position: absolute;
+  top: 165px;
+  right: -120px;
+  width: 50%;
+  
+}
