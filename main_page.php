@@ -21,34 +21,17 @@
     </header>
     <main>
     <div class="square-block">
-        <h3>ВЫБЕРИТЕ ТИП АТТРАКЦИОНА</h3>
-    <div class="button-gorki">
-         <a href="#" class="floating-button">Горки<span></span></a>
-    </div> 
-    <div class="button-jump">
-         <a href="#" class="floating-button">Батуты<span></span></a>
+    <div class="btn-group">
+        <button>Все</button>
+        <button>Качели</button>
+        <button>Карусели</button>
+        <button>Батуты</button>
+        <button>Кинотеатры</button>
+        <button>Картинг</button>
+        <button>Горки</button>
+        <button>Экстимальные</button>
+        <button>В торговых центрах</button>
     </div>
-    <div class="button-kacheli">
-         <a href="#" class="floating-button">Качели<span></span></a>
-    </div>
-    <div class="button-karting">
-         <a href="#" class="floating-button">Картинг<span></span></a>
-    </div>
-    <div class="button-courusel">
-         <a href="#" class="floating-button">Карусель<span></span></a>
-    </div>
-    <div class="button-cinema">
-         <a href="#" class="floating-button">Кинотеатр<span></span></a>
-    </div>
-    
-    <div class="button-extrim">
-         <a href="#" class="floating-button">Экстремальные<span></span></a>
-    </div>
-   
-    <div class="button-TC">
-         <a href="#" class="floating-button">В торговых центрах<span></span></a>
-    </div>
-    
     </div>
     </div>
     </main>
