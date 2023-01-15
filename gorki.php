@@ -22,19 +22,19 @@
     <main>
     <div class="square-block">
     <div class="btn-group">
+        <button><a href="main_page.php">Все</a></button>
+        <button>Карусели</button>
         <button>Качели</button>
-        <button><a href="courusel.php">Карусели</a></button>
         <button>Батуты</button>
         <button>Кинотеатры</button>
         <button>Картинг</button>
-        <button><a href="gorki.php">Горки</a></button>
         <button>Экстимальные</button>
         <button>В торговых центрах</button>
     </div>
     <?php
     include "db_connect.php";
     // Выводим результат из БД
-    $sql = mysqli_query($connect, 'SELECT Name FROM `ATTRACTIONS`');
+    $sql = mysqli_query($connect, "SELECT Name FROM `ATTRACTIONS` WHERE Name RLIKE 'ГОРКА' || Name RLIKE 'ГОРА'");
     while ($result = mysqli_fetch_array($sql)) {
         echo '<ul>'.'<li>' .$result['Name'].'</ul>'.'<li>';
     }
