@@ -23,13 +23,13 @@
     <div class="square-block">
     <div class="btn-group">
         <button><a href="main_page.php">Все</a></button>
-        <button>Качели</button>
-        <button>Батуты</button>
-        <button>Кинотеатры</button>
-        <button>Картинг</button>
+        <button><a href="kacheli.php">Качели</a></button>
+        <button><a href="jump.php">Батуты</a></button>
+        <button><a href="cinema.php">Кинотеатры</a></button>
+        <button><a href="autodrom.php">Автодромы</a></button>
         <button><a href="gorki.php">Горки</a></button>
         <button>Экстимальные</button>
-        <button>В торговых центрах</button>
+        <button><a href="in_trk.php">В торговых центрах</a></button>
     </div>
     <?php
         include "db_connect.php";
