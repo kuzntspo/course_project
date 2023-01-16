@@ -33,7 +33,7 @@
     </div>
     <?php
         include "db_connect.php";
-        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'КАРУСЕЛЬ' || Name RLIKE 'CAROUSEL'";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'КАРУСЕЛЬ' || Name RLIKE 'CAROUSEL'|| Name RLIKE 'JET'|| Name RLIKE 'ДЖЕТ'|| Name RLIKE 'MERRY' || Name RLIKE 'FAMILY'";
         $result = mysqli_query($connect, $sql);//обращение к бд
         if (!$result) die('Error result');
         while ($row_img = mysqli_fetch_assoc($result)) { 
