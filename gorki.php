@@ -31,14 +31,20 @@
         <button>Экстимальные</button>
         <button>В торговых центрах</button>
     </div>
+    <div class = 'img'>
     <?php
-    include "db_connect.php";
-    // Выводим результат из БД
-    $sql = mysqli_query($connect, "SELECT Name FROM `ATTRACTIONS` WHERE Name RLIKE 'ГОРКА' || Name RLIKE 'ГОРА'");
-    while ($result = mysqli_fetch_array($sql)) {
-        echo '<ul>'.'<li>' .$result['Name'].'</ul>'.'<li>';
-    }
-    ?>
+        include "db_connect.php";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'ЗИМНЯЯ ГОРКА'|| Name RLIKE 'ГОРКА ДЛЯ КАТАНИЯ'|| Name RLIKE 'ГОРКА ДЕРЕВЯННАЯ'";
+        $result = mysqli_query($connect, $sql);//обращение к бд
+        if (!$result) die('Error result');
+        while ($row_img = mysqli_fetch_assoc($result)) { 
+            ?>
+            <?php echo '<ul>'.'<li>'.$row_img['Name'].'</li>'.'<li>'.$row_img['Location'].'</li>'.'</ul>';?> 
+            <img src="<?php echo $row_img['Photo'];?>" weight='300px' height="300" />
+            <?php
+            }
+            ?>
+    </div>
     </div>
     </div>
     </main>

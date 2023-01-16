@@ -31,6 +31,7 @@
         <button>Экстимальные</button>
         <button>В торговых центрах</button>
     </div>
+    <div class = 'img'>
     <?php
         include "db_connect.php";
         $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'БАТУТ' || Name RLIKE 'НАДУВНАЯ' || Name RLIKE 'БАТУТНЫЙ' || Name RLIKE 'СПОРТ'";
@@ -43,6 +44,7 @@
             <?php
             }
             ?>
+    </div>
     </div>
     </div>
     </main>
