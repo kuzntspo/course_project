@@ -127,3 +127,7 @@ ul {
   color: white;
   transform: translateY(-7px);
 }
+
+.img{
+  font-weight: bold;
+}

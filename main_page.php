@@ -22,23 +22,29 @@
     <main>
     <div class="square-block">
     <div class="btn-group">
-        <button>Качели</button>
+        <button><a href="kacheli.php">Качели</button>
         <button><a href="courusel.php">Карусели</a></button>
-        <button>Батуты</button>
-        <button>Кинотеатры</button>
-        <button>Картинг</button>
+        <button><a href="jump.php">Батуты</a></button>
+        <button><a href="cinema.php">Кинотеатры</a></button>
+        <button><a href="autodrom.php">Автодромы</a></button>
         <button><a href="gorki.php">Горки</a></button>
-        <button>Экстимальные</button>
-        <button>В торговых центрах</button>
+        <button>Экстремальные</button>
+        <button><a href="in_trk.php">В торгово-развлекательных центрах</a></button>
     </div>
-    <?php
-    include "db_connect.php";
-    // Выводим результат из БД
-    $sql = mysqli_query($connect, 'SELECT Name FROM `ATTRACTIONS`');
-    while ($result = mysqli_fetch_array($sql)) {
-        echo '<ul>'.'<li>' .$result['Name'].'</ul>'.'<li>';
-    }
-    ?>
+    <div class="img">
+        <?php
+        include "db_connect.php";
+        $sql = "SELECT Name,Location,Photo FROM ATTRACTION";
+        $result = mysqli_query($connect, $sql);//обращение к бд
+        if (!$result) die('Error result');
+        while ($row_img = mysqli_fetch_assoc($result)) { 
+            ?>
+            <?php echo '<ul>'.'<li>'.$row_img['Name'].'</li>'.'<li>'.$row_img['Location'].'</li>'.'</ul>';?> 
+            <img src="<?php echo $row_img['Photo'];?>" weight='300px' height="300" />
+            <?php
+            }
+            ?>
+    </div>
     </div>
     </div>
     </main>
