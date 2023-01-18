@@ -20,7 +20,7 @@
         </ul>
     </header>
     <main>
-        <form action="" class="ui-form">
+        <form action="" class="ui-form" method="post">
             <h3>АВТОРИЗАЦИЯ</h3>
             <div class="form-row">
                 <input type="text" id="email" required autocomplete="off"><label for="email">Email</label>
@@ -31,7 +31,7 @@
             <p><input type="submit" value="Войти"></p>
         </form>
         <div class="sign-up">
-            <p class="text">У меня нет аккаунта,<a class="text-sign-up" href = "sign_up.php">зарегистрироваться</a></p>
+            <p class="text">У меня нет аккаунта,<a class="text-sign-up" href = "sign_up_page.php">зарегистрироваться</a></p>
         </div>
     </main>
     <footer></footer>
