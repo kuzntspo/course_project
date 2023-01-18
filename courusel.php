@@ -29,6 +29,7 @@
         <button><a href="autodrom.php">Автодромы</a></button>
         <button><a href="gorki.php">Горки</a></button>
         <button>Экстимальные</button>
+        <button><a href="akva.php">В аквапарках</a></button>
         <button><a href="in_trk.php">В торговых центрах</a></button>
     </div>
     <?php

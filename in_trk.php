@@ -30,11 +30,12 @@
         <button><a href="autodrom.php">Автодромы</a></button>
         <button><a href="gorki.php">Горки</a></button>
         <button>Экстремальные</button>
+        <button><a href="akva.php">В аквапарках</a></button>
     </div>
     <div class = 'img'>
     <?php
         include "db_connect.php";
-        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION_2`";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION_2` WHERE Location RLIKE 'ТЦ' || Location Rlike 'ТРК'|| Location Rlike 'ТРЦ'|| Location Rlike 'ТЕМАТИЧЕСКИЙ ПАРК РАЗВЛЕЧЕНИЙ ОСТРОВ МЕЧТЫ'";
         $result = mysqli_query($connect, $sql);//обращение к бд
         if (!$result) die('Error result');
         while ($row_img = mysqli_fetch_assoc($result)) { 

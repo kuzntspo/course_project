@@ -23,19 +23,18 @@
     <div class="square-block">
     <div class="btn-group">
         <button><a href="main_page.php">Все</a></button>
+        <button><a href="kacheli.php">Качели</button>
         <button><a href="courusel.php">Карусели</a></button>
-        <button><a href="kacheli.php">Качели</a></button>
         <button><a href="jump.php">Батуты</a></button>
         <button><a href="cinema.php">Кинотеатры</a></button>
+        <button><a href="autodrom.php">Автодромы</a></button>
         <button><a href="gorki.php">Горки</a></button>
-        <button>Экстимальные</button>
-        <button><a href="akva.php">В аквапарках</a></button>
-        <button><a href="in_trk.php">В торговых центрах</a></button>
+        <button>Экстремальные</button>
     </div>
     <div class = 'img'>
     <?php
         include "db_connect.php";
-        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'АВТОДРОМ'";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION_2` WHERE Location RLIKE 'АКВАПАРК' || Location Rlike 'АКВАКОМПЛЕКСК'";
         $result = mysqli_query($connect, $sql);//обращение к бд
         if (!$result) die('Error result');
         while ($row_img = mysqli_fetch_assoc($result)) { 

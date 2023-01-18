@@ -29,6 +29,7 @@
         <button><a href="cinema.php">Кинотеатры</a></button>
         <button><a href="autodrom.php">Автодромы</a></button>
         <button>Экстремальные</button>
+        <button><a href="akva.php">В аквапарках</a></button>
         <button><a href="in_trk.php">В торгово-развлекательных центрах</a></button>
     </div>
     <div class = 'img'>
