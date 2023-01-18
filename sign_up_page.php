@@ -1,5 +1,8 @@
 <?php
 session_start();
+if ($_SESSION['user']){
+    header('Location: main_page.php');
+}
 //error_reporting(0);
 ?>
 <!DOCTYPE html>

@@ -11,7 +11,7 @@ if ($password===$repeat_password){
     $password = md5($password);
     mysqli_query($connect, "INSERT INTO `users`(`name`, `login`, `password`) VALUES ('$name','$email','$password')");
     $_SESSION['message'] = 'Регистрация прошла успешно!';
-    header('Location: main_page.php');
+    header('Location: log_in_page.php');
 }
 else{
     $_SESSION['message'] = 'Пароли не совпадают';

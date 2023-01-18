@@ -1,6 +1,9 @@
 <?php
 session_start();
-//error_reporting(0);
+error_reporting(0);
+if ($_SESSION['user']){
+    header('Location: main_page.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -18,7 +21,7 @@ session_start();
 <body>
     <header>
         <ul class = "menu-main">
-            <li><a href = "index.html">На главную</a></li>
+            <li><a href = "index.php">На главную</a></li>
             <li><a href = "map.php">Карта</a></li>
             <li><a href = "about_us.html">О нас</a></li>
         </ul>
