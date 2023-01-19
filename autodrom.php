@@ -29,17 +29,21 @@ error_reporting(0);
     <main>
     <div class="square-block">
     <h2>Здравствуйте, <?=$_SESSION['user']['name']?></h2>
-    <div class="btn-group">
-        <button><a href="main_page.php">Все</a></button>
-        <button><a href="courusel.php">Карусели</a></button>
-        <button><a href="kacheli.php">Качели</a></button>
-        <button><a href="jump.php">Батуты</a></button>
-        <button><a href="cinema.php">Кинотеатры</a></button>
-        <button><a href="gorki.php">Горки</a></button>
-        <button>Экстимальные</button>
-        <button><a href="akva.php">В аквапарках</a></button>
-        <button><a href="in_trk.php">В торговых центрах</a></button>
-    </div>
+    <div class="dropdown">
+            <button class="dropbtn">Показать аттракционы</button>
+            <div class="dropdown-content">
+                <a href="main_page.php">Все аттракционы</a>
+                <a href="kacheli.php">Качели</a>
+                <a href="courusel.php">Карусели</a>
+                <a href="jump.php">Батуты</a>
+                <a href="cinema.php">Кинотеатры и виртульная реальность</a>
+                <a href="gorki.php">Горки</a>
+                <a href="extreme.php">Экстремальные</a>
+                <a href="akva.php">В аквапарках</a>
+                <a href="eye.php">Колесо обозрения</a>
+                <a href="in_trk.php">В торгово-развлекательных центрах</a>
+            </div>
+        </div>
     <div class = 'img'>
     <?php
         include "db_connect.php";

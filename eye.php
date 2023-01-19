@@ -28,8 +28,8 @@ error_reporting(0);
     </header>
     <main>
     <div class="square-block">
-        <h2>Здравствуйте, <?=$_SESSION['user']['name']?></h2>
-        <div class="dropdown">
+    <h2>Здравствуйте, <?=$_SESSION['user']['name']?></h2>
+    <div class="dropdown">
             <button class="dropbtn">Показать аттракционы</button>
             <div class="dropdown-content">
                 <a href="main_page.php">Все аттракционы</a>
@@ -41,13 +41,13 @@ error_reporting(0);
                 <a href="gorki.php">Горки</a>
                 <a href="extreme.php">Экстремальные</a>
                 <a href="akva.php">В аквапарках</a>
-                <a href="eye.php">Колесо обозрения</a>
+                <a href="in_trk.php">В торгово-развлекательных центрах</a>
             </div>
         </div>
     <div class = 'img'>
     <?php
         include "db_connect.php";
-        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION_2` WHERE Location RLIKE 'ТЦ' || Location Rlike 'ТРК'|| Location Rlike 'ТРЦ'|| Location Rlike 'ТЕМАТИЧЕСКИЙ ПАРК РАЗВЛЕЧЕНИЙ ОСТРОВ МЕЧТЫ'";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'КОЛЕСО ОБОЗРЕНИЯ' || Name RLIKE 'СОЛНЫШКО' || Name RLIKE 'KIDDIE WHEEL' || Name RLIKE 'КРУГОВОР ОБЗОР'";
         $result = mysqli_query($connect, $sql);//обращение к бд
         if (!$result) die('Error result');
         while ($row_img = mysqli_fetch_assoc($result)) { 
