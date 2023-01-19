@@ -43,7 +43,10 @@ error_reporting(0);
     <div class = 'img'>
     <?php
         include "db_connect.php";
-        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'БАТУТ' || Name RLIKE 'НАДУВНАЯ' || Name RLIKE 'БАТУТНЫЙ' || Name RLIKE 'СПОРТ'";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'БАТУТ' || Name RLIKE 'НАДУВНАЯ' || Name RLIKE 'БАТУТНЫЙ' || Name RLIKE 'СПОРТ'|| 
+        Name IN('ТИГРИНАЯ СТРАНА - 2','ББ.3001','ЦАРЬ ГОРЫ','КИТ', 'ПОДВОДНЫЙ МИР 2', 'ВУЛКАН', 'ОСТРОВ СОКРОВИЩ', 'МГ.4002', 'ДЖУНГЛИ', 'КОСМИК', 'ГАЛЕОН','ВИНИ-ПУХ','ЗООАРЕНА', 'МАДАГАСКАР','СЛАСТЕНА', 'МГ.4049', 'ВОЛНА', 'ПОДВОДНЫЙ МИР')";
+
+
         $result = mysqli_query($connect, $sql);//обращение к бд
         if (!$result) die('Error result');
         while ($row_img = mysqli_fetch_assoc($result)) { 
