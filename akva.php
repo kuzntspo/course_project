@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!$_SESSION['user']){
+    header('Location: log_in_page.php');
+}
+error_reporting(0);
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -13,14 +20,15 @@
 <body>
     <header>
         <ul class = "menu-main">
-            <li><a href = "index.html">На главную</a></li>
+            <li><a href = "index.php">На главную</a></li>
             <li><a href = "about_us.html">О нас</a></li>
             <li><a href = "map.php">Карта</a></li>
-            <li><a href = "log_in_page.php">Авторизация</a></li>
+            <li><a href="log_out.php">Выход</a></li>
         </ul>
     </header>
     <main>
     <div class="square-block">
+    <h2>Здравствуйте, <?=$_SESSION['user']['name']?></h2>
     <div class="btn-group">
         <button><a href="main_page.php">Все</a></button>
         <button><a href="kacheli.php">Качели</button>

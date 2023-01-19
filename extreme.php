@@ -30,20 +30,37 @@ error_reporting(0);
     <div class="square-block">
         <h2>Здравствуйте, <?=$_SESSION['user']['name']?></h2>
     <div class="btn-group">
+        <button><a href="main_page.php">Все</a></button>
         <button><a href="kacheli.php">Качели</button>
         <button><a href="courusel.php">Карусели</a></button>
         <button><a href="jump.php">Батуты</a></button>
         <button><a href="cinema.php">Кинотеатры</a></button>
         <button><a href="autodrom.php">Автодромы</a></button>
         <button><a href="gorki.php">Горки</a></button>
-        <button><a href="extreme.php">Экстремальные</button>
         <button><a href="akva.php">В аквапарках</a></button>
         <button><a href="in_trk.php">В торгово-развлекательных центрах</a></button>
     </div>
-    <div class="img">
-        <?php
+    <div class = 'img'>
+    <?php
         include "db_connect.php";
-        $sql = "SELECT Name,Location,Photo FROM ATTRACTION";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'КАТАЛЬНАЯ ГОРА'|| 
+                                                                   Name RLIKE 'КОЛОБОК'|| 
+                                                                   Name RLIKE 'WORLD TRIP' ||
+                                                                   Name RLIKE 'TOWER'||
+                                                                   Name ='ГУСЕНИЦА'||
+                                                                   Name = 'ДРАКОН'||
+                                                                   Name ='КОСМИЧЕСКАЯ БАШНЯ'||
+                                                                   Name ='ПАДАЮЩАЯ ЗВЕЗДА'||
+                                                                   Name ='КОРСАР'||
+                                                                   Name ='HAPPY SWING'||
+                                                                   Name ='MINI TYPHOON 360'||
+                                                                   Name ='JUMPING STAR 12M'||
+                                                                   Name ='ЦЕПОЧНАЯ КАРУСЕЛЬ С ПОДЪЕМОМ'||
+                                                                   Name ='ГИГАНТСКИЕ КАЧЕЛИ «360»'||
+                                                                   Name ='DINNER IN THE SKY (УЖИН В НЕБЕСАХ)'||
+                                                                   Name ='ЭНТЕРПРАЙЗ'||
+                                                                   Name ='SALTOMATTO'||
+                                                                   Name ='DISCOVERY 16 REVOLUTION'";
         $result = mysqli_query($connect, $sql);//обращение к бд
         if (!$result) die('Error result');
         while ($row_img = mysqli_fetch_assoc($result)) { 
