@@ -47,24 +47,12 @@ error_reporting(0);
     <div class = 'img'>
     <?php
         include "db_connect.php";
-        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'КАТАЛЬНАЯ ГОРА'|| 
-                                                                   Name RLIKE 'КОЛОБОК'|| 
-                                                                   Name RLIKE 'WORLD TRIP' ||
-                                                                   Name RLIKE 'TOWER'||
-                                                                   Name ='ГУСЕНИЦА'||
-                                                                   Name = 'ДРАКОН'||
-                                                                   Name ='КОСМИЧЕСКАЯ БАШНЯ'||
-                                                                   Name ='ПАДАЮЩАЯ ЗВЕЗДА'||
-                                                                   Name ='КОРСАР'||
-                                                                   Name ='HAPPY SWING'||
-                                                                   Name ='MINI TYPHOON 360'||
-                                                                   Name ='JUMPING STAR 12M'||
-                                                                   Name ='ЦЕПОЧНАЯ КАРУСЕЛЬ С ПОДЪЕМОМ'||
-                                                                   Name ='ГИГАНТСКИЕ КАЧЕЛИ «360»'||
-                                                                   Name ='DINNER IN THE SKY (УЖИН В НЕБЕСАХ)'||
-                                                                   Name ='ЭНТЕРПРАЙЗ'||
-                                                                   Name ='SALTOMATTO'||
-                                                                   Name ='DISCOVERY 16 REVOLUTION'";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'КАТАЛЬНАЯ ГОРА'||Name RLIKE 'КОЛОБОК'||Name RLIKE 'WORLD TRIP' 
+        || Name RLIKE 'TOWER'|| Name RLIKE 'AIR RACE'|| Name RLIKE 'DISCO'||
+        Name IN ('ГУСЕНИЦА','ДРАКОН','КОСМИЧЕСКАЯ БАШНЯ','ПАДАЮЩАЯ ЗВЕЗДА','КОРСАР','HAPPY SWING','MINI TYPHOON 360','JUMPING STAR 12M',
+        'ЦЕПОЧНАЯ КАРУСЕЛЬ С ПОДЪЕМОМ','ГИГАНТСКИЕ КАЧЕЛИ «360»','DINNER IN THE SKY (УЖИН В НЕБЕСАХ)','ЭНТЕРПРАЙЗ','SALTOMATTO',
+        'DISCOVERY 16 REVOLUTION','ТАНЦЕВАЛЬНЫЙ БАЛ', 'CRAZY BUS', 'ЛЕТАЮЩАЯ ТАРЕЛКА','HAPPY KANGAROO','MINI DANC PARTY', '«АТТРАКЦИОН «МИКС»',
+        'DISCO ПАРКОВАЯ МОДЕЛЬ')";
         $result = mysqli_query($connect, $sql);//обращение к бд
         if (!$result) die('Error result');
         while ($row_img = mysqli_fetch_assoc($result)) { 
