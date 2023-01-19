@@ -40,9 +40,13 @@ error_reporting(0);
         <button><a href="akva.php">В аквапарках</a></button>
         <button><a href="in_trk.php">В торговых центрах</a></button>
     </div>
+    <div class="img">
     <?php
         include "db_connect.php";
-        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE Name RLIKE 'КАРУСЕЛЬ' || Name RLIKE 'CAROUSEL'|| Name RLIKE 'JET'|| Name RLIKE 'ДЖЕТ'|| Name RLIKE 'MERRY' || Name RLIKE 'FAMILY'";
+        $sql = "SELECT Name,Location,Photo FROM `ATTRACTION` WHERE 
+        Name RLIKE 'КАРУСЕЛЬ' || Name RLIKE 'CAROUSEL'|| Name RLIKE 'JET'|| Name RLIKE 'ДЖЕТ'|| Name RLIKE 'MERRY' || Name RLIKE 'SWING'|| Name RLIKE 'AIR RACE' || Name RLIKE 'RED BARON' || Name RLIKE 'AROUND' || Name RLIKE 'РАКУШКИ'|| 
+        Name IN('ВОЗДУШНЫЙ ШАР','ВЕРТОЛЕТЫ','MAGIC BIKES','ОСЬМИНОГ', 'ОРБИТА-420', 'ПИРАТ', 'РАЛЛИ', 'ДРАКОНЫ', 'МИНИ- ПОЛИП', 'АТТРАКЦИОН СЕРИИ 10MEH ФУТУРИСТИЧЕСКАЯ', 'КЕГУРУ','RED BARON INTERACTIVE','FLYING TIGERS', 'ЛЕТАЮЩИЕ СЛОНЫ','CHOCO CUPS', 'FLYING BIKES', 'BOUNCE SPIN', 'ЭВРИКА')";
+        
         $result = mysqli_query($connect, $sql);//обращение к бд
         if (!$result) die('Error result');
         while ($row_img = mysqli_fetch_assoc($result)) { 
@@ -52,6 +56,7 @@ error_reporting(0);
             <?php
             }
             ?>
+    </div>
     </div>
     </div>
     </main>
