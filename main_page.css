@@ -91,7 +91,7 @@ ul {
 	line-height:70px; /*высота строки текста*/
 	margin-left: 300px;
 	margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 	border-radius: 18px;
   overflow-y: auto;
   overflow-x: auto;
@@ -148,3 +148,14 @@ ul {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #d78a4c;}
+
+.footer{
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  background-color:rgba(255, 255, 255, 0.229) ;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}

@@ -1,4 +1,4 @@
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -14,17 +14,6 @@
     background-attachment: fixed;
   }
 
-  .image-filter {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000;
-    opacity: 0.6;
-  }
 
   .welcome__title{
     color: rgb(255, 255, 255);
@@ -152,4 +141,14 @@ ul {
   padding: 25px 0 20px; 
   margin: 0 30px;
 }
+}
+.footer{
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  position: fixed;
+  background-color:rgba(255, 255, 255, 0.229) ;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }
