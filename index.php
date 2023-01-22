@@ -24,10 +24,12 @@
          <a href="main_page.php" class="arrow-btn">Выбрать аттракцион<span></span></a>
         </div>
     </main>
-    <footer class="footer">
+    <footer>
+        <div class="footer">
         <p>Приложение создано на основе открытых данных города Москвы:</p>
             <a href="https://data.mos.ru/opendata/7709083955-attraktsiony-v-skverah-i-parkah" style="color: azure;">Аттракционы в парках и на площадках, </a></li>
             <a href="https://data.mos.ru/opendata/7709083955-attraktsiony-v-torgovyh-tsentrah-i-kompleksah"style="color: azure;">Аттракционы в торгово-развлекательных комплексах</a></li>
+        </div>
     </footer>
 </body>
 </html>

@@ -19,17 +19,19 @@
         </ul>
     </header>
     <main>
-    <div class="square-block">
-        <h2>КАРТА АТТРАКЦИОНОВ МОСКВЫ</h2>
-        <script type="text/javascript" charset="utf-8" 
-        async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e91a42a728f80ace5ee57cbff50a7a4bd87067b82fb1cd6c6d61b36bca2ec84&amp;width=900&amp;height=530&amp;lang=ru_RU&amp;scroll=true">
-    </script>
-    </div>
+        <div class="square-block">
+            <h2>КАРТА АТТРАКЦИОНОВ МОСКВЫ</h2>
+            <script type="text/javascript" charset="utf-8" 
+            async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e91a42a728f80ace5ee57cbff50a7a4bd87067b82fb1cd6c6d61b36bca2ec84&amp;width=900&amp;height=530&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </div>
     </main>
-    <footer class="footer">
+    <footer>
+        <div class="footer">
         <p>Приложение создано на основе открытых данных города Москвы:</p>
             <a href="https://data.mos.ru/opendata/7709083955-attraktsiony-v-skverah-i-parkah" style="color: azure;">Аттракционы в парках и на площадках, </a></li>
             <a href="https://data.mos.ru/opendata/7709083955-attraktsiony-v-torgovyh-tsentrah-i-kompleksah"style="color: azure;">Аттракционы в торгово-развлекательных комплексах</a></li>
+        </div>
     </footer>
 </body>
 </html>

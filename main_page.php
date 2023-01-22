@@ -3,7 +3,7 @@ session_start();
 if (!$_SESSION['user']){
     header('Location: log_in_page.php');
 }
-error_reporting(0);
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
