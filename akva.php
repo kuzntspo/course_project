@@ -46,7 +46,7 @@ error_reporting(0);
         </div>
         <form class="search" method="post">
             <select class= "select" name="adm">
-                <option selected>Все</option>
+                <option selected>Все административные округа</option>
                 <option value="Центральный административный округ">Центральный административный округ</option>
                 <option value="Северный административный округ">Северный административный округ</option>
                 <option value="Северо-Восточный административный округ">Северо-Восточный административный округ</option>
@@ -60,7 +60,7 @@ error_reporting(0);
                 <option value="Зеленоградский административный округ">Зеленоградский административный округ</option>
             </select>
             <select class= "select" name="district">
-                <option selected>Все</option>
+                <option selected>Все районы</option>
                 <!--Центральный административный округ-->
                 <option value="район Арбат">Арбат</option>
                 <option value="Басманный район">Басманный</option>
