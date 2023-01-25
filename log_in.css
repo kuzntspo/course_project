@@ -134,10 +134,10 @@ ul {
   transform: translateY(-60px);
   margin-left: -14px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: bold;
   outline: 0;
-  border-color: #F77A52;
-  color: #F77A52;
+  border-color: #fffdfc;
+  color: #ffffff;
 }
 .ui-form input[type="submit"] {
   width: 100%;
